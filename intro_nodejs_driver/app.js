@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient,
     assert = require('assert');
 
-var url = 'mongodb://localhost:27017/video';
+var url = 'mongodb://localhost:27017/movies';
 
 MongoClient.connect(url, function(err, db) {
 
@@ -23,5 +23,3 @@ MongoClient.connect(url, function(err, db) {
     // Declare success
     console.log("Called find()");
 });
-
-
